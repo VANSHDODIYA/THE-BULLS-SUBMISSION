@@ -1,0 +1,69 @@
+def analyze_taparia_tools():
+    cp_taparia = 4.1
+    pe_taparia = 0.1
+    pb_taparia = 0.04
+    book_value_taparia = 228.63
+
+    print("\nAnalyzing Taparia Tools Stock:")
+    
+    # Check the conditions for Taparia Tools
+    if pe_taparia < 10 and pb_taparia < 1 and book_value_taparia > cp_taparia:
+        print("Condition Satisfied: Hold or Buy the stock.")
+        if pe_taparia < 10:
+            print("- P/E ratio is less than 10, which indicates the stock might be undervalued.")
+        if pb_taparia < 1:
+            print("- P/B ratio is less than 1, which generally suggests the stock is trading below its book value.")
+        if book_value_taparia > cp_taparia:
+            print("- Book Value is greater than the current price, indicating the stock is undervalued relative to its book value.")
+    else:
+        print("Condition Not Satisfied: Do not buy or hold the stock.")
+        if not (pe_taparia < 10):
+            print("- P/E ratio is greater than 10, which may indicate the stock is overvalued.")
+        if not (pb_taparia < 1):
+            print("- P/B ratio is greater than 1, which may indicate the stock is trading above its book value.")
+        if not (book_value_taparia > cp_taparia):
+            print("- Book Value is less than the current price, which could suggest the stock is overpriced.")
+
+def analyze_rvnl():
+    cp_rvnl = 473
+    pe_rvnl = 71.2
+    pb_rvnl = 11
+    book_value_rvnl = 38.1
+
+    print("\nAnalyzing RVNL Stock:")
+    
+    # Check the conditions for RVNL
+    if pe_rvnl < 10 and pb_rvnl < 1 and book_value_rvnl > cp_rvnl:
+        print("Condition Satisfied: Hold or Buy the stock.")
+        if pe_rvnl < 10:
+            print("- P/E ratio is less than 10, which indicates the stock might be undervalued.")
+        if pb_rvnl < 1:
+            print("- P/B ratio is less than 1, which generally suggests the stock is trading below its book value.")
+        if book_value_rvnl > cp_rvnl:
+            print("- Book Value is greater than the current price, indicating the stock is undervalued relative to its book value.")
+    else:
+        print("Condition Not Satisfied: Do not buy or hold the stock.")
+        if not (pe_rvnl < 10):
+            print("- P/E ratio is greater than 10, which may indicate the stock is overvalued.")
+        if not (pb_rvnl < 1):
+            print("- P/B ratio is greater than 1, which may indicate the stock is trading above its book value.")
+        if not (book_value_rvnl > cp_rvnl):
+            print("- Book Value is less than the current price, which could suggest the stock is overpriced.")
+
+def main():
+    print("Stock Analysis Program")
+    print("Choose a stock to analyze:")
+    print("1. Taparia Tools")
+    print("2. RVNL")
+    
+    choice = input("Enter 1 or 2: ")
+    
+    if choice == '1':
+        analyze_taparia_tools()
+    elif choice == '2':
+        analyze_rvnl()
+    else:
+        print("Invalid input. Please choose either 1 or 2.")
+
+if _name_ == "_main_":
+    main()
