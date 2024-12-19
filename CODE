@@ -6,7 +6,7 @@ def analyze_taparia_tools():
 
     print("\nAnalyzing Taparia Tools Stock:")
     
-    # Check the conditions for Taparia Tools
+
     if pe_taparia < 10 and pb_taparia < 1 and book_value_taparia > cp_taparia:
         print("Condition Satisfied: Hold or Buy the stock.")
         if pe_taparia < 10:
@@ -32,7 +32,7 @@ def analyze_rvnl():
 
     print("\nAnalyzing RVNL Stock:")
     
-    # Check the conditions for RVNL
+    
     if pe_rvnl < 10 and pb_rvnl < 1 and book_value_rvnl > cp_rvnl:
         print("Condition Satisfied: Hold or Buy the stock.")
         if pe_rvnl < 10:
